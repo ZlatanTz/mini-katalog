@@ -1,0 +1,22 @@
+.header {
+  width: 100%;
+  background: #3b82f6;
+  color: white;
+  padding: 20px 30px;
+  text-align: center;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 4px 0 0;
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
