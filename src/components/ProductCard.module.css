@@ -50,6 +50,11 @@
   font-weight: 600;
   margin: 12px;
   color: #111827;
+  height: 60px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines before truncating */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .price {
