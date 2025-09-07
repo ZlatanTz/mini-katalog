@@ -9,16 +9,19 @@ export const Toolbar = ({
   onSortChange,
 }) => {
   return (
-    <div className={styles.toolbar}>
+    <div
+      className={styles.toolbar}
+      role="region"
+      aria-label="Filters and sorting"
+    >
       <input
         type="search"
         name="search-bar"
         className={styles['search-bar']}
         value={query ?? ''}
-        onChange={(e) => {
-          onQueryChange(e.target.value);
-        }}
+        onChange={(e) => onQueryChange(e.target.value)}
         placeholder="Search products..."
+        aria-label="Search products"
       />
 
       <label className={styles['featured-checkbox-container']}>
@@ -27,9 +30,8 @@ export const Toolbar = ({
           name="featured-checkbox"
           className={styles['featured-checkbox']}
           checked={featuredOnly ?? false}
-          onChange={(e) => {
-            onFeaturedChange(e.target.checked);
-          }}
+          onChange={(e) => onFeaturedChange(e.target.checked)}
+          aria-label="Featured only"
         />
         Featured only
       </label>

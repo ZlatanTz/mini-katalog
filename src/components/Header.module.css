@@ -1,22 +1,29 @@
 .header {
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background: #3b82f6;
-  color: white;
-  padding: 20px 30px;
-  text-align: center;
+  color: #fff;
+  padding: 16px 20px;
   border-radius: 0 0 12px 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
-
 .title {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
 }
-
-.subtitle {
-  margin: 4px 0 0;
-  font-size: 1rem;
-  font-weight: 400;
-  opacity: 0.9;
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.badge {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+.total {
+  font-weight: 700;
 }
